@@ -38,6 +38,10 @@ app.use((req, res, next) => {
 //setting api
 app.use("/api/user", userRouters);
 app.use("/api/item", itemRouters);
+app.get("/", (res,req)=>{
+  res.send("get this");
+
+})
 
 //setting the server port
 app.listen(port, () => console.log(`Server listening on port ${port}`));
