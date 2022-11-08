@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 //setting api
 app.use("/api/user", userRouters);
 app.use("/api/item", itemRouters);
-app.get("/", (res,req)=>{
+app.get("/", (req,res)=>{
   res.send("get this");
 
 })
